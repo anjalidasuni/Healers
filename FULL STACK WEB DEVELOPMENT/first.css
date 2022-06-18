@@ -1,0 +1,315 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+a{
+    text-decoration: none;
+}
+#section1{
+    height: 800px;
+    display: inline-block;
+}
+/* css for header */
+.header{
+    height: 90px;
+    width: 100%;
+    /* background-color: rgb(16, 16, 240); */
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+.container{
+    width: 90%;
+    /* background-color: red; */
+    display: flex;
+}
+.header_container{
+    justify-content: space-between;
+}
+
+.logo{
+    height: 90px;
+    width: 15%;
+    /* background-color: yellow; */
+    font-size: 33px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    line-height: 70px;
+ }
+
+ .nav{
+     height: 90px;
+     width: 35%;
+     /* background-color: green; */
+ }
+ .nav-item{
+     
+     width: 15%;
+     height: 90px;
+     /* background-color: grey;  */
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     text-align:center;
+     line-height: 70px;
+     display: inline-block;
+     color: white;
+     cursor: pointer;
+     transition: .5s;
+     
+ }
+ .nav-item:hover{
+     background-color: white;
+     color: rgb(16, 128, 234,1);
+ }
+
+ @media screen and (min-width:300px)and (max-width: 600px) {
+    .nav{
+      float: none;
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+ .banner{
+     height: 800px;
+     width: 100%;
+     background-color: rgb(216, 208, 208);
+     background-image: url("./images/pexels-brett-sayles-2821220.jpg" );
+     background-size:cover;
+     color: white;
+
+ }
+ .overlay{
+     height: 800px;
+     width: 100%;
+     /* below code is For making background image transparent */
+     background-color:rgba(0, 0, 0,0.5);
+     display: flex;
+     align-items: center;
+     
+ }
+.banner_text{
+    height: 350px;
+    width: 50%;
+    background-color:rgba(236, 13, 13, 0.349);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+}
+.banner_title
+{
+    font-size: 50px;
+    margin-bottom:15px ;
+    
+}
+.banner_desc{
+    margin-bottom: 30px;
+}
+
+.padd{
+    padding: 20px;
+    /* background-color: red; */
+}
+.banner_button{
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 3px solid white;
+    cursor: pointer;
+    transition: .5s;
+}
+.banner_button:hover{
+    background-color:white ;
+    color:rgb(16, 128, 234,1);
+
+}
+
+
+@media screen and (min-width:300px)and (max-width: 600px) {
+    .banner{
+      float: none;
+      flex-direction:column;
+}
+    
+  }
+
+  .about{
+    padding-top: 50px;
+    padding-bottom:50px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+   
+
+}
+.about_container{
+    margin-top:30px;
+    line-height: 30px;
+    display: inline;
+}
+ .start_text{
+    font-size: 40px;
+    font-weight: bold;
+    color: grey; 
+
+} 
+
+
+.form_layout{
+    background-color: rgb(173, 216, 230);
+    padding: 0px;
+    width: 100%;
+    height: 700px;
+    padding-top: 10px;
+    
+}
+
+.form{
+    width: 50%;
+    height:640px;
+    background:rgb(240, 255, 255);
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    /* position:absolute; */
+   
+}
+.form_h2{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:#78788c;
+    border-bottom:3px solid #78788c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2;
+}
+.form_input:focus{
+    border-bottom:2px solid #78788c;
+    height: 50px;
+}
+.form_para:before{
+    content:attr(type);display:block;margin:28px 0 0;font-size:14px;color:#5a5a5a;
+}
+.form_button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all ;
+}
+button:hover{background:#78788c;color:#fff
+}
+.form_div{
+    content:'Hi';
+    position:absolute;
+    bottom:-15px;
+    right:-20px; 
+    background:#50505a;
+    color:#fff;
+    width:320px;
+    /* padding:16px 4px 16px 0; */
+    border-radius:6px;
+    font-size:13px;
+    box-shadow:10px 10px 40px -14px #000
+}
+
+.footer{
+    padding-top:50px;
+    padding-bottom: 50px;
+    background-color: #363535;
+    display: flex;
+    justify-content: center;
+}
+.footer_child{
+    width: 25%;
+    height: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: grey; */
+    display: flex;
+    justify-content: center;
+  
+}
+.footer_child1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    align-items: center; 
+}
+ul{
+    margin-top: 40px;
+}
+li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: white;
+}
+.first{
+    font-size: 22px;
+
+}
+.footer_child_social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_social{
+    width: 75%;
+   justify-content:space-between;
+}
+.social_icon
+{
+    height: 60px;
+    width: 60px;
+    /* background-color: white; */
+}
+.si1{
+    background-image: url('https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-facebook_-512.png');
+    background-size: cover;
+}
+.si2{
+    background-image: url('https://cdn1.iconfinder.com/data/icons/google-new-logos-1/32/gmail_new_logo-512.png');
+    background-size: cover;
+}
+
+.si3{
+background-image: url('https://cdn1.iconfinder.com/data/icons/logotypes/32/square-twitter-4096.png');
+background-size: cover;
+}
+.si4{
+    background-image: url('https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-512.png');
+    background-size: cover;
+}
